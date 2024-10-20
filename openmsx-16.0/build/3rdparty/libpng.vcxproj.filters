@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cfb12311-2c25-406d-90fa-1a94e04b9107}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{dadb6a38-0397-4c12-958f-43fc35c69553}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d19955fe-f136-45bb-baa2-ab0c5710c4f1}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\scripts\pngw32.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\pngconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(ThirdPartySrcDir)\$(LibNameLibPng)\scripts\pngwin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

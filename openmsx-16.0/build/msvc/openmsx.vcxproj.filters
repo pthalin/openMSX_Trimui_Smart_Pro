@@ -1,0 +1,2976 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cassette">
+      <UniqueIdentifier>{27eaf1e2-f5da-477a-99a5-7be15006d6a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commands">
+      <UniqueIdentifier>{878501bc-d7f0-49ec-bc35-d2e22835aaf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{a5140952-ef4a-4d86-b93f-8562cf838f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="console">
+      <UniqueIdentifier>{2bd3c002-6e7b-444b-a02f-75e6e57aa28e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpu">
+      <UniqueIdentifier>{99b1a5c3-9248-4127-bb7a-bffc6052fa1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debugger">
+      <UniqueIdentifier>{2f1531a3-2bff-4bb2-b737-8b5bc263a5d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events">
+      <UniqueIdentifier>{4b659948-74af-4e70-9469-71cf9e8ff90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fdc">
+      <UniqueIdentifier>{0d4a99d7-3f0c-4bd7-94c9-73f2ad724887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file">
+      <UniqueIdentifier>{a36193d1-ca1d-4188-aefc-60d10a41573b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ide">
+      <UniqueIdentifier>{db111771-419a-4e9f-a046-87a88f567ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{39b914e9-534c-42eb-8b1c-7078665cd464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{e010ea5f-02d9-420a-af08-577f6fac9b71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{4790c7a8-2904-4fda-9248-fc5357d9751f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{6bf182df-f9bf-43c3-9d2a-c0984b19716c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sound">
+      <UniqueIdentifier>{234f2a7b-0398-45c2-9149-a918a0d564bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{c12b54ed-4653-4ee0-b86a-e5c90a8b9b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{5db6c172-d415-41b3-b89d-876e94c600d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{f34953a9-8bb9-4fe7-9d92-38dd046b936a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video\v9990">
+      <UniqueIdentifier>{dc7744b4-c613-43ff-8e2b-d89fb8b90f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video\ld">
+      <UniqueIdentifier>{441fef5c-d4c3-4cb1-8bd9-27253f5a929a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serial">
+      <UniqueIdentifier>{8fe6dae8-765e-428c-abf4-662e83a99385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{ce8126f9-f849-4f95-85bf-f6919a3a4e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="laserdisc">
+      <UniqueIdentifier>{3b3e10a3-7923-46c0-b78f-46acd840d7c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\CasImage.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\CassetteDevice.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\CassetteImage.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\CassettePlayer.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\CassettePlayerCLI.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\CassettePort.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\DummyCassetteDevice.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cassette\WavImage.cc">
+      <Filter>cassette</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\Command.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\CommandException.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\Completer.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\GlobalCommandController.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\InfoCommand.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\InfoTopic.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\Interpreter.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\MSXCommandController.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\ProxyCommand.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\TclObject.cc">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\config\HardwareConfig.cc">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\config\SettingsConfig.cc">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\config\XMLElement.cc">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\config\XMLLoader.cc">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\CommandConsole.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDConsoleRenderer.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDGUI.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDGUILayer.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDImageBasedWidget.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDRectangle.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDText.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDTopWidget.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\OSDWidget.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\console\TTFFont.cc">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\BreakPointBase.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\CPURegs.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\CPUClock.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\CPUCore.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\Dasm.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\IRQHelper.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\MSXCPU.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\MSXCPUInterface.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\MSXMultiDevice.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\MSXMultiIODevice.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\MSXMultiMemDevice.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\MSXWatchIODevice.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\cpu\VDPIODelay.cc">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\debugger\DasmTables.cc">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\debugger\Debugger.cc">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\debugger\Probe.cc">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\debugger\ProbeBreakPoint.cc">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\debugger\SimpleDebuggable.cc">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\AfterCommand.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\CliComm.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\CliConnection.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\CliServer.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\Event.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\EventDistributor.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\GlobalCliComm.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\HotKey.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\InputEventFactory.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\InputEventGenerator.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\InputEvents.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\Keys.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\MSXCliComm.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\events\Socket.cc">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\BootBlocks.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DirAsDSK.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\Disk.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskChanger.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskContainer.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskDrive.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskFactory.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskImageCLI.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskImageUtils.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskManipulator.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskName.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DiskPartition.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DriveMultiplexer.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DSKDiskImage.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DummyDisk.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\EmptyDiskPatch.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\MicrosolFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\MSXFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\MSXtar.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\NationalFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\SanyoFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\ToshibaFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\SpectravideoFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\VictorFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\NowindCommand.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\NowindHost.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\NowindInterface.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\NowindRomDisk.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\PhilipsFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\YamahaFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\RamDSKDiskImage.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\RealDrive.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\SectorAccessibleDisk.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\SectorBasedDisk.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\TC8566AF.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\TurboRFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\WD2793.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\WD2793BasedFDC.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\XSADiskImage.cc">
+      <Filter>fdc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\CompressedFileAdapter.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\File.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\FileBase.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\FileContext.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\Filename.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\FileOperations.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\FilePool.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\GZFileAdapter.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\LocalFile.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\LocalFileReference.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\PreCacheFile.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\ReadDir.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\ZipFileAdapter.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\file\ZlibInflate.cc">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\AbstractIDEDevice.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\CDImageCLI.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\DummyIDEDevice.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\DummySCSIDevice.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\GoudaSCSI.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\HD.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\HDCommand.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\HDImageCLI.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\IDECDROM.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\IDEDeviceFactory.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\IDEHD.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\MB89352.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\MegaSCSI.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\SCSIHD.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\SCSILS120.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\SunriseIDE.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\BeerIDE.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\ide\WD33C93.cc">
+      <Filter>ide</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\ArkanoidPad.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\DummyJoystick.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\EventDelay.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\Joystick.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\JoystickDevice.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\JoystickPort.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\JoyTap.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\Keyboard.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\KeyboardSettings.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\KeyJoystick.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\MagicKey.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\Mouse.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\MSXEventDistributor.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\NinjaTap.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\Paddle.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\RecordedCommand.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\SETetrisDongle.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\StateChangeDistributor.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\Trackball.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\input\UnicodeKeymap.cc">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\AmdFlash.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\EEPROM_93C46.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\Carnivore2.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\TrackedRam.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\CheckedRam.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\ColecoSuperGameModule.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\ESE_RAM.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\ESE_SCC.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\FraelSwitchableROM.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXHBI55.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXMapperIO.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXMegaRam.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXMemoryMapper.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXMemoryMapperBase.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXMirrorDevice.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXPac.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXRam.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXRom.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MSXRomCLI.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MusicalMemoryMapper.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\PanasonicMemory.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\PanasonicRam.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\Ram.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\Rom.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomArc.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomAscii16_2.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomAscii16kB.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomAscii8_8.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomAscii8kB.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomBlocks.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomColecoMegaCart.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomCrossBlaim.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomDatabase.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomDRAM.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomFactory.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomFSA1FM.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomGameMaster2.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomGeneric16kB.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomGeneric8kB.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomHalnote.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomHarryFox.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomHolyQuran.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomHolyQuran2.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomInfo.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomInfoTopic.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonami.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiKeyboardMaster.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiSCC.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMajutsushi.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomManbow2.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMatraCompilation.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMatraInk.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMSXDOS2.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomNational.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomNettouYakyuu.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomPadial16kB.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomPadial8kB.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomPageNN.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomPanasonic.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomPlain.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomPlayBall.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomRamFile.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomRType.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomSuperLodeRunner.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomSynthesizer.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomZemina126in1.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomZemina80in1.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomZemina90in1.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\SRAM.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\BooleanSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\EnumSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\FilenameSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\FloatSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\IntegerSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\KeyCodeSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\ProxySetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\Setting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\SettingsManager.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\StringSetting.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\UserSettings.cc">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\AudioInputConnector.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\AudioInputDevice.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\AY8910.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\AY8910Periphery.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\BlipBuffer.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\DACSound16S.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\DACSound8U.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\DummyAudioInputDevice.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\DummyY8950KeyboardDevice.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\EmuTimer.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\KeyClick.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\Mixer.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXAudio.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXFmPac.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMixer.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMoonSound.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMusic.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXOPL3Cartridge.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXPSG.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXSCCPlusCart.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXTurboRPCM.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXYamahaSFG.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\NullSoundDriver.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\ResampleBlip.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\ResampleHQ.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\ResampleLQ.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\ResampleTrivial.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SamplePlayer.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SCC.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SDLSoundDriver.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SN76489.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SNPSG.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SoundDevice.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\VLM5030.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\WavAudioInput.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\WavWriter.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\Y8950.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\Y8950Adpcm.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\Y8950KeyboardConnector.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\Y8950KeyboardDevice.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\Y8950Periphery.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YM2151.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YM2413.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YM2413Burczynski.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YM2413Okazaki.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YM2413NukeYKT.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YM2413OriginalNukeYKT.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\opll.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YMF262.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\YMF278.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\thread\Thread.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\thread\Timer.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\Base64.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\Date.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\DivModBySame.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\HexDump.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\MemoryOps.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\sha1.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\StringOp.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\utf8_checked.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\win32-arggen.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\win32-dirent.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\Poller.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\ADVram.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\AviRecorder.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\AviWriter.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\BaseImage.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\BitmapConverter.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\CharacterConverter.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\DeinterlacedFrame.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\Deflicker.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\Display.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\DoubledFrame.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\DummyRenderer.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\DummyVideoSystem.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\FBPostProcessor.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\FrameSource.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\GLImage.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\GLPostProcessor.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\GLSnow.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\GLUtil.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\Icon.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\Layer.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\OutputSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLOutputSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\PixelRenderer.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\PNG.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\PostProcessor.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\RawFrame.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\Renderer.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\RendererFactory.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\RenderSettings.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLGLOffScreenSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLGLVisibleSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLImage.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLOffScreenSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLRasterizer.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLSnow.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLVideoSystem.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLVisibleSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SDLVisibleSurfaceBase.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SpriteChecker.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VDP.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VDPCmdEngine.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VDPAccessSlots.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VDPVRAM.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VideoLayer.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VideoSystem.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\VisibleSurface.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\ZMBVEncoder.cc">
+      <Filter>video</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990BitmapConverter.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990CmdEngine.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990DummyRenderer.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990PxConverter.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990PixelRenderer.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990SDLRasterizer.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\V9990VRAM.cc">
+      <Filter>video\v9990</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\ld\LDDummyRenderer.cc">
+      <Filter>video\ld</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\ld\LDPixelRenderer.cc">
+      <Filter>video\ld</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\video\ld\LDSDLRasterizer.cc">
+      <Filter>video\ld</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\ClockPin.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\DummyMidiInDevice.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\DummyMidiOutDevice.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\DummyRS232Device.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\I8251.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\I8254.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\JVCMSXMIDI.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MC6850.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\Midi_w32.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiInConnector.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiInDevice.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiInReader.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiInWindows.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiOutConnector.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiOutDevice.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiOutLogger.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MidiOutWindows.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MSXFacMidiInterface.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MSXMidi.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MusicModuleMIDI.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\MSXRS232.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\RS232Connector.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\RS232Device.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\RS232Tester.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\serial\YM2148.cc">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\security\SocketStreamWrapper.cc">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\security\SspiNegotiateServer.cc">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\security\SspiUtils.cc">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\laserdisc\LaserdiscPlayer.cc">
+      <Filter>laserdisc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\laserdisc\LaserdiscPlayerCLI.cc">
+      <Filter>laserdisc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\laserdisc\OggReader.cc">
+      <Filter>laserdisc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\laserdisc\PioneerLDControl.cc">
+      <Filter>laserdisc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\laserdisc\yuv2rgb.cc">
+      <Filter>laserdisc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\Autofire.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\CartridgeSlotManager.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\ChakkariCopy.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\CliExtension.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\CLIOption.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\CommandLineParser.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Connector.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\DebugDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\DeviceFactory.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\DummyDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\DummyPrinterPortDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\DynamicClock.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\EmptyPatch.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\EmuTime.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\FirmwareSwitch.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\GlobalSettings.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\I8255.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\IPSPatch.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\LedStatus.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\main.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXBunsetsu.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXDeviceSwitch.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXE6Timer.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXHiResTimer.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXResetStatusRegister.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXKanji.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXKanji12.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXMatsushita.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXVictorHC9xSystemControl.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXMotherBoard.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXPPI.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXPrinterPort.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXRTC.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXS1985.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXS1990.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXSwitchedDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXTurboRPause.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\PasswordCart.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Pluggable.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\PluggableFactory.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\PluggingController.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Printer.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\PrinterPortDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\PrinterPortLogger.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\PrinterPortSimpl.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Reactor.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\RealTime.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\RenShaTurbo.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\ReplayCLI.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\ReverseManager.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\RP5C01.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\RTSchedulable.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\RTScheduler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\SaveStateCLI.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Schedulable.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Scheduler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\SensorKid.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\serialize.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\serialize_core.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\serialize_meta.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\ThrottleManager.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\Version.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\SVIPrinterPort.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\SVIPPI.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\SerializeBuffer.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MegaFlashRomSCCPlus.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\TclArgParser.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\TclParser.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\config\DeviceConfig.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\events\StdioMessages.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\events\TclCallbackMessages.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\RawTrack.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\DMKDiskImage.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\input\JoyMega.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomDooly.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\ResampledSoundDevice.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\rapidsax.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLHQLiteScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLHQScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLRGBScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLSaIScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLScaleNxScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLScalerFactory.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLSimpleScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\DirectScalerOutput.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\SuperImposeScalerOutput.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\StretchScalerOutput.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\MLAAScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLTVScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\HQ2xLiteScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\HQ2xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\HQ3xLiteScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\HQ3xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Multiply32.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\RGBTriplet3xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\SaI2xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\SaI3xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Scale2xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Scale3xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Scaler1.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Scaler2.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Scaler3.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\ScalerFactory.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Scanline.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Simple2xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\Simple3xScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\v9990\Video9000.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\MSXCielTurbo.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\commands\TclCallback.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\events\MessageCommand.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\AVTFDC.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\input\Touchpad.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomSuperSwangi.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMitsubishiMLTS2.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMSXtra.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMSXWrite.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMultiRom.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\ReadOnlySetting.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\settings\VideoSourceSetting.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\DeltaBlock.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\Tiger.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\TigerTree.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\utils\lz4.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\SuperImposedVideoFrame.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\events\AdhocCliCommParser.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\ReproCartridgeV1.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\ReproCartridgeV2.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\KonamiUltimateCollection.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\MegaFlashRomSCCPlusSD.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\ROMHunterMk2.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\SdCard.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLDefaultScaler.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\video\GLContext.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SVIPSG.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\fdc\SVIFDC.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\input\ColecoJoystickIO.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(OpenMSXSrcDir)\cassette\CasImage.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\CassetteDevice.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\CassetteImage.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\CassettePlayer.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\CassettePlayerCLI.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\CassettePort.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\DummyCassetteDevice.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cassette\WavImage.hh">
+      <Filter>cassette</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\Command.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\CommandController.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\CommandException.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\Completer.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\GlobalCommandController.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\InfoCommand.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\InfoTopic.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\Interpreter.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\InterpreterOutput.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\MSXCommandController.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\ProxyCommand.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\TclObject.hh">
+      <Filter>commands</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\config\ConfigException.hh">
+      <Filter>config</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\config\HardwareConfig.hh">
+      <Filter>config</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\config\SettingsConfig.hh">
+      <Filter>config</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\config\XMLElement.hh">
+      <Filter>config</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\config\XMLException.hh">
+      <Filter>config</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\config\XMLLoader.hh">
+      <Filter>config</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\CommandConsole.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDConsoleRenderer.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDGUI.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDGUILayer.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDImageBasedWidget.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDRectangle.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDText.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDTopWidget.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\OSDWidget.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\console\TTFFont.hh">
+      <Filter>console</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\BreakPoint.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\BreakPointBase.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\CacheLine.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\CPURegs.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\CPUClock.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\CPUCore.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\Dasm.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\IRQHelper.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\MSXCPU.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\MSXCPUInterface.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\MSXMultiDevice.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\MSXMultiIODevice.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\MSXMultiMemDevice.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\MSXWatchIODevice.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\R800.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\VDPIODelay.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\WatchPoint.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\cpu\Z80.hh">
+      <Filter>cpu</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\debugger\DasmTables.hh">
+      <Filter>debugger</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\debugger\Debuggable.hh">
+      <Filter>debugger</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\debugger\Debugger.hh">
+      <Filter>debugger</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\debugger\Probe.hh">
+      <Filter>debugger</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\debugger\ProbeBreakPoint.hh">
+      <Filter>debugger</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\debugger\SimpleDebuggable.hh">
+      <Filter>debugger</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\AfterCommand.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\CliComm.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\CliConnection.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\CliServer.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\Event.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\EventDistributor.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\EventListener.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\FinishFrameEvent.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\GlobalCliComm.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\HotKey.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\InputEventFactory.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\InputEventGenerator.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\InputEvents.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\Keys.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\MSXCliComm.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\events\Socket.hh">
+      <Filter>events</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\BootBlocks.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DirAsDSK.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\Disk.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskChanger.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskContainer.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskDrive.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskExceptions.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskFactory.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskImageCLI.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskImageUtils.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskManipulator.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskName.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DiskPartition.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DriveMultiplexer.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DSKDiskImage.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\DummyDisk.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\EmptyDiskPatch.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\MicrosolFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\MSXFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\MSXtar.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\NationalFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\SanyoFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\ToshibaFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\VictorFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\NowindCommand.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\NowindHost.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\NowindInterface.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\NowindRomDisk.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\PhilipsFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\YamahaFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\RamDSKDiskImage.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\RealDrive.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\SectorAccessibleDisk.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\SectorBasedDisk.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\TC8566AF.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\TurboRFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\WD2793.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\WD2793BasedFDC.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\fdc\XSADiskImage.hh">
+      <Filter>fdc</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\CompressedFileAdapter.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\File.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\FileBase.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\FileContext.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\FileException.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\Filename.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\FileOperations.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\FilePool.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\GZFileAdapter.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\LocalFile.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\LocalFileReference.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\PreCacheFile.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\ReadDir.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\ZipFileAdapter.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\file\ZlibInflate.hh">
+      <Filter>file</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\AbstractIDEDevice.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\CDImageCLI.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\DummyIDEDevice.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\DummySCSIDevice.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\GoudaSCSI.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\HD.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\HDCommand.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\HDImageCLI.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\IDECDROM.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\IDEDevice.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\IDEDeviceFactory.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\IDEHD.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\MB89352.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\MegaSCSI.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\SCSI.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\SCSIDevice.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\SCSIHD.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\SCSILS120.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\SunriseIDE.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\BeerIDE.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\ide\WD33C93.hh">
+      <Filter>ide</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\ArkanoidPad.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\DummyJoystick.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\EventDelay.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\Joystick.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\JoystickDevice.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\JoystickPort.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\JoyTap.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\Keyboard.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\KeyboardSettings.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\KeyJoystick.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\MagicKey.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\Mouse.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\MSXEventDistributor.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\MSXEventListener.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\NinjaTap.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\Paddle.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\RecordedCommand.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\SETetrisDongle.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\StateChange.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\StateChangeDistributor.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\StateChangeListener.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\Trackball.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\input\UnicodeKeymap.hh">
+      <Filter>input</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\AmdFlash.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\EEPROM_93C46.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\Carnivore2.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\TrackedRam.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\CheckedRam.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\ColecoSuperGameModule.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\ESE_RAM.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\ESE_SCC.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\FraelSwitchableROM.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXHBI55.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXMapperIO.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXMegaRam.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXMemoryMapper.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXMemoryMapperBase.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXMirrorDevice.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXPac.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXRam.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXRom.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MSXRomCLI.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\MusicalMemoryMapper.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\PanasonicMemory.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\PanasonicRam.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\Ram.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\Rom.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomArc.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomAscii16_2.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomAscii16kB.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomAscii8_8.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomAscii8kB.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomBlocks.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomCrossBlaim.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomDatabase.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomDRAM.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomFactory.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomFSA1FM.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomGameMaster2.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomGeneric16kB.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomGeneric8kB.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomHalnote.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomHarryFox.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomHolyQuran.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomHolyQuran2.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomInfo.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomInfoTopic.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomKonami.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomKonamiKeyboardMaster.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomKonamiSCC.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomMajutsushi.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomManbow2.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomMatraCompilation.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomMatraInk.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomMSXDOS2.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomNational.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomNettouYakyuu.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomPadial16kB.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomPadial8kB.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomPageNN.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomPanasonic.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomPlain.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomPlayBall.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomRamFile.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomRType.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomSuperLodeRunner.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomSynthesizer.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomTypes.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomZemina126in1.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomZemina80in1.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomZemina90in1.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\memory\SRAM.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\resource\openmsx.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\BooleanSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\EnumSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\FilenameSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\FloatSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\IntegerSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\KeyCodeSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\ProxySetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\ReadOnlySetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\Setting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\SettingPolicy.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\SettingsManager.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\StringSetting.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\settings\UserSettings.hh">
+      <Filter>settings</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\AudioInputConnector.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\AudioInputDevice.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\AY8910.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\AY8910Periphery.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\BlipBuffer.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\DACSound16S.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\DACSound8U.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\DummyAudioInputDevice.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\DummyY8950KeyboardDevice.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\EmuTimer.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\KeyClick.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\Mixer.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXAudio.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXFmPac.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXMixer.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXMoonSound.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXMusic.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXOPL3Cartridge.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXPSG.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXSCCPlusCart.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXTurboRPCM.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXYamahaSFG.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\NullSoundDriver.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\ResampleAlgo.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\ResampleBlip.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\ResampleCoeffs.ii">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\ResampleHQ.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\ResampleLQ.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\ResampleTrivial.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SamplePlayer.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SCC.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SDLSoundDriver.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SN76489.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SNPSG.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SoundDevice.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SoundDriver.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\VLM5030.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\WavAudioInput.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\WavData.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\WavWriter.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\Y8950.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\Y8950Adpcm.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\Y8950KeyboardConnector.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\Y8950KeyboardDevice.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\Y8950Periphery.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2151.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413Burczynski.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413Core.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413Interface.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413Okazaki.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413NukeYKT.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413NukeYktTables.ii">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413OriginalNukeYKT.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\opll.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YMF262.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\YMF278.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\thread\Thread.hh">
+      <Filter>thread</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\thread\Timer.hh">
+      <Filter>thread</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Aligned.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Base64.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\checked_cast.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\CircularBuffer.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\CRC16.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\cstdiop.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\cstdlibp.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Date.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\direntp.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\DivModByConst.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\DivModBySame.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\FixedPoint.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\HexDump.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\inline.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\join.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\likely.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Math.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\MemBuffer.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\MemoryOps.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\my_auto_ptr.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Observer.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\one_of.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\ref.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\ScopedAssign.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\sdlwin32.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\sha1.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\shared_ptr.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\static_assert.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\statp.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\StringOp.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\stringsp.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Subject.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\uint128.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\unistdp.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\unreachable.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\utf8_checked.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\utf8_core.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\utf8_unchecked.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\vla.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\win32-arggen.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\win32-dirent.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\utils\Poller.hh">
+      <Filter>utils</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\ADVram.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\AviRecorder.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\AviWriter.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\BaseImage.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\BitmapConverter.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\CharacterConverter.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\DeinterlacedFrame.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Deflicker.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\DirtyChecker.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Display.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\DisplayMode.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\DoubledFrame.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\DummyRenderer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\DummyVideoSystem.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\FBPostProcessor.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\FrameSource.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\GLImage.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\GLPostProcessor.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\GLSnow.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\GLUtil.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Icon.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Layer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\LayerListener.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\OutputSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLOutputSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\PixelOperations.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\PixelRenderer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\PNG.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\PostProcessor.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Rasterizer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\RawFrame.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Renderer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\RendererFactory.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\RenderSettings.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\Scanline.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLGLOffScreenSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLGLVisibleSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLImage.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLOffScreenSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLRasterizer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLSnow.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLSurfacePtr.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLVideoSystem.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLVisibleSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SDLVisibleSurfaceBase.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SpriteChecker.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SpriteConverter.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VDP.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VDPCmdEngine.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VDPAccessSlots.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VDPVRAM.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VideoLayer.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VideoSourceSetting.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VideoSystem.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VideoSystemChangeListener.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VisibleSurface.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\VRAMObserver.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\ZMBVEncoder.hh">
+      <Filter>video</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990BitmapConverter.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990CmdEngine.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990DisplayTiming.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990DummyRenderer.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990ModeEnum.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990PxConverter.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990PixelRenderer.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990Rasterizer.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990Renderer.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990SDLRasterizer.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\video\v9990\V9990VRAM.hh">
+      <Filter>video\v9990</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\ClockPin.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\DummyMidiInDevice.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\DummyMidiOutDevice.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\DummyRS232Device.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\I8251.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\I8254.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\JVCMSXMIDI.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MC6850.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\Midi_w32.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiInConnector.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiInDevice.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiInReader.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiInWindows.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiOutConnector.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiOutDevice.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiOutLogger.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MidiOutWindows.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MSXFacMidiInterface.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MSXMidi.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MusicModuleMIDI.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\MSXRS232.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\RS232Connector.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\RS232Device.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\RS232Tester.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\SerialDataInterface.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\serial\YM2148.hh">
+      <Filter>serial</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\security\SocketStreamWrapper.hh">
+      <Filter>security</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\security\SspiNegotiateServer.hh">
+      <Filter>security</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\security\SspiUtils.hh">
+      <Filter>security</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\Autofire.hh" />
+    <None Include="$(OpenMSXSrcDir)\CartridgeSlotManager.hh" />
+    <None Include="$(OpenMSXSrcDir)\ChakkariCopy.hh" />
+    <None Include="$(OpenMSXSrcDir)\CliExtension.hh" />
+    <None Include="$(OpenMSXSrcDir)\CLIOption.hh" />
+    <None Include="$(OpenMSXSrcDir)\Clock.hh" />
+    <None Include="$(OpenMSXSrcDir)\CommandLineParser.hh" />
+    <None Include="$(OpenMSXSrcDir)\Connector.hh" />
+    <None Include="$(OpenMSXSrcDir)\DebugDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\DeviceFactory.hh" />
+    <None Include="$(OpenMSXSrcDir)\DummyDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\DummyPrinterPortDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\DynamicClock.hh" />
+    <None Include="$(OpenMSXSrcDir)\EmptyPatch.hh" />
+    <None Include="$(OpenMSXSrcDir)\EmuDuration.hh" />
+    <None Include="$(OpenMSXSrcDir)\EmuTime.hh" />
+    <None Include="$(OpenMSXSrcDir)\FirmwareSwitch.hh" />
+    <None Include="$(OpenMSXSrcDir)\GlobalSettings.hh" />
+    <None Include="$(OpenMSXSrcDir)\I8255.hh" />
+    <None Include="$(OpenMSXSrcDir)\I8255Interface.hh" />
+    <None Include="$(OpenMSXSrcDir)\InitException.hh" />
+    <None Include="$(OpenMSXSrcDir)\IPSPatch.hh" />
+    <None Include="$(OpenMSXSrcDir)\LedStatus.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXBunsetsu.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXDeviceSwitch.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXE6Timer.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXHiResTimer.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXException.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXResetStatusRegister.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXKanji.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXKanji12.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXMatsushita.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXVictorHC9xSystemControl.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXMotherBoard.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXPPI.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXPrinterPort.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXRTC.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXS1985.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXS1990.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXSwitchedDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXTurboRPause.hh" />
+    <None Include="$(OpenMSXSrcDir)\PasswordCart.hh" />
+    <None Include="$(OpenMSXSrcDir)\PatchInterface.hh" />
+    <None Include="$(OpenMSXSrcDir)\PlugException.hh" />
+    <None Include="$(OpenMSXSrcDir)\Pluggable.hh" />
+    <None Include="$(OpenMSXSrcDir)\PluggableFactory.hh" />
+    <None Include="$(OpenMSXSrcDir)\PluggingController.hh" />
+    <None Include="$(OpenMSXSrcDir)\Printer.hh" />
+    <None Include="$(OpenMSXSrcDir)\PrinterPortDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\PrinterPortLogger.hh" />
+    <None Include="$(OpenMSXSrcDir)\PrinterPortSimpl.hh" />
+    <None Include="$(OpenMSXSrcDir)\Reactor.hh" />
+    <None Include="$(OpenMSXSrcDir)\RealTime.hh" />
+    <None Include="$(OpenMSXSrcDir)\RenShaTurbo.hh" />
+    <None Include="$(OpenMSXSrcDir)\ReplayCLI.hh" />
+    <None Include="$(OpenMSXSrcDir)\ReverseManager.hh" />
+    <None Include="$(OpenMSXSrcDir)\RP5C01.hh" />
+    <None Include="$(OpenMSXSrcDir)\RTSchedulable.hh" />
+    <None Include="$(OpenMSXSrcDir)\RTScheduler.hh" />
+    <None Include="$(OpenMSXSrcDir)\Schedulable.hh" />
+    <None Include="$(OpenMSXSrcDir)\Scheduler.hh" />
+    <None Include="$(OpenMSXSrcDir)\SensorKid.hh" />
+    <None Include="$(OpenMSXSrcDir)\serialize.hh" />
+    <None Include="$(OpenMSXSrcDir)\serialize_constr.hh" />
+    <None Include="$(OpenMSXSrcDir)\serialize_core.hh" />
+    <None Include="$(OpenMSXSrcDir)\serialize_meta.hh" />
+    <None Include="$(OpenMSXSrcDir)\serialize_stl.hh" />
+    <None Include="$(OpenMSXSrcDir)\ThrottleManager.hh" />
+    <None Include="$(OpenMSXSrcDir)\Version.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\SVIPSG.hh" />
+    <None Include="$(OpenMSXSrcDir)\fdc\SVIFDC.hh" />
+    <None Include="$(OpenMSXSrcDir)\SVIPrinterPort.hh" />
+    <None Include="$(OpenMSXSrcDir)\SVIPPI.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\MegaFlashRomSCCPlus.hh">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\commands\TclArgParser.hh" />
+    <None Include="$(OpenMSXSrcDir)\commands\TclParser.hh" />
+    <None Include="$(OpenMSXSrcDir)\config\DeviceConfig.hh" />
+    <None Include="$(OpenMSXSrcDir)\events\TclCallbackMessages.hh" />
+    <None Include="$(OpenMSXSrcDir)\events\CliListener.hh" />
+    <None Include="$(OpenMSXSrcDir)\events\StdioMessages.hh" />
+    <None Include="$(OpenMSXSrcDir)\fdc\RawTrack.hh" />
+    <None Include="$(OpenMSXSrcDir)\file\FileNotFoundException.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomDooly.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\BlipConfig.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\BlipTable.ii" />
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413OkazakiConfig.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\YM2413OkazakiTable.ii" />
+    <None Include="$(OpenMSXSrcDir)\sound\ResampledSoundDevice.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\hash_map.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\hash_set.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\strCat.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\rapidsax.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLHQLiteScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLHQScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLRGBScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLSaIScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLScaleNxScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLScalerFactory.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLSimpleScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\MLAAScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLTVScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ2xLiteScaler-1x1to1x2.nn" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ2xLiteScaler-1x1to2x2.nn" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ2xLiteScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ2xScaler-1x1to1x2.nn" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ2xScaler-1x1to2x2.nn" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ2xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ3xLiteScaler-1x1to3x3.nn" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ3xLiteScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ3xScaler-1x1to3x3.nn" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQ3xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\DirectScalerOutput.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\SuperImposeScalerOutput.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\StretchScalerOutput.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\HQCommon.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\LineScalers.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Multiply32.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\RGBTriplet3xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\SaI2xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\SaI3xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Scale2xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Scale3xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Scaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Scaler1.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Scaler2.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Scaler3.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\ScalerFactory.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Simple2xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\Simple3xScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\v9990\Video9000.hh" />
+    <None Include="$(OpenMSXSrcDir)\SaveState.hh" />
+    <None Include="$(OpenMSXSrcDir)\MSXCielTurbo.hh" />
+    <None Include="$(OpenMSXSrcDir)\commands\TclCallback.hh" />
+    <None Include="$(OpenMSXSrcDir)\events\MessageCommand.hh" />
+    <None Include="$(OpenMSXSrcDir)\fdc\AVTFDC.hh" />
+    <None Include="$(OpenMSXSrcDir)\input\Touchpad.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomSuperSwangi.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomMitsubishiMLTS2.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomMSXtra.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomMSXWrite.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomMultiRom.hh" />
+    <None Include="$(OpenMSXSrcDir)\settings\VideoSourceSetting.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\DeltaBlock.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\Tiger.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\TigerTree.hh" />
+    <None Include="$(OpenMSXSrcDir)\utils\lz4.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedVideoFrame.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh" />
+    <None Include="$(OpenMSXSrcDir)\events\AdhocCliCommParser.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\ReproCartridgeV1.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\ReproCartridgeV2.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\KonamiUltimateCollection.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\MegaFlashRomSCCPlusSD.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\ROMHunterMk2.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\SdCard.cc.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\GLContext.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\scalers\GLDefaultScaler.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh" />
+    <None Include="$(OpenMSXSrcDir)\fdc\SpectravideoFDC.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh" />
+    <None Include="$(OpenMSXSrcDir)\input\ColecoJoystickIO.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomColecoMegaCart.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh" />
+    <None Include="$(OpenMSXSrcDir)\video\SuperImposedFrame.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(OpenMSXSrcDir)\resource\openmsx.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(OpenMSXSrcDir)\sound\fake_windows.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\video\ld\LDDummyRenderer.hh">
+      <Filter>video\ld</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\video\ld\LDPixelRenderer.hh">
+      <Filter>video\ld</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\video\ld\LDRasterizer.hh">
+      <Filter>video\ld</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\video\ld\LDRenderer.hh">
+      <Filter>video\ld</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\video\ld\LDSDLRasterizer.hh">
+      <Filter>video\ld</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\laserdisc\LaserdiscPlayer.hh">
+      <Filter>laserdisc</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\laserdisc\LaserdiscPlayerCLI.hh">
+      <Filter>laserdisc</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\laserdisc\OggReader.hh">
+      <Filter>laserdisc</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\laserdisc\PioneerLDControl.hh">
+      <Filter>laserdisc</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="$(OpenMSXSrcDir)\laserdisc\yuv2rgb.hh">
+      <Filter>laserdisc</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(OpenMSXSrcDir)\openmsx.hh" />
+  </ItemGroup>
+</Project>

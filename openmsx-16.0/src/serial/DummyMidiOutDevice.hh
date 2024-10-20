@@ -1,0 +1,20 @@
+#ifndef DUMMYMIDIOUTDEVICE_HH
+#define DUMMYMIDIOUTDEVICE_HH
+
+#include "MidiOutDevice.hh"
+
+namespace openmsx {
+
+class DummyMidiOutDevice final : public MidiOutDevice
+{
+public:
+	// SerialDataInterface (part)
+	void recvByte(byte value, EmuTime::param time) override;
+	std::string_view getDescription() const override;
+	void plugHelper(Connector& connector, EmuTime::param time) override;
+	void unplugHelper(EmuTime::param time) override;
+};
+
+} // namespace openmsx
+
+#endif

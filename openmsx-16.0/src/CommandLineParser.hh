@@ -1,0 +1,171 @@
+#ifndef COMMANDLINEPARSER_HH
+#define COMMANDLINEPARSER_HH
+
+#include "CLIOption.hh"
+#include "MSXRomCLI.hh"
+#include "CliExtension.hh"
+#include "ReplayCLI.hh"
+#include "SaveStateCLI.hh"
+#include "CassettePlayerCLI.hh"
+#include "DiskImageCLI.hh"
+#include "HDImageCLI.hh"
+#include "CDImageCLI.hh"
+#include "InfoTopic.hh"
+#include "span.hh"
+#include "components.hh"
+#include <memory>
+#include <initializer_list>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <utility>
+
+#if COMPONENT_LASERDISC
+#include "LaserdiscPlayerCLI.hh"
+#endif
+
+namespace openmsx {
+
+class Reactor;
+class MSXMotherBoard;
+class GlobalCommandController;
+class Interpreter;
+
+class CommandLineParser
+{
+public:
+	enum ParseStatus { UNPARSED, RUN, CONTROL, TEST, EXIT };
+	enum ParsePhase {
+		PHASE_BEFORE_INIT,       // --help, --version, -bash
+		PHASE_INIT,              // calls Reactor::init()
+		PHASE_BEFORE_SETTINGS,   // -setting, -nommx, ...
+		PHASE_LOAD_SETTINGS,     // loads settings.xml
+		PHASE_BEFORE_MACHINE,    // before -machine
+		PHASE_LOAD_MACHINE,      // -machine
+		PHASE_DEFAULT_MACHINE,   // default machine
+		PHASE_LAST,              // all the rest
+	};
+
+	explicit CommandLineParser(Reactor& reactor);
+	void registerOption(const char* str, CLIOption& cliOption,
+		ParsePhase phase = PHASE_LAST, unsigned length = 2);
+	void registerFileType(std::initializer_list<std::string_view> extensions,
+	                      CLIFileType& cliFileType);
+	void parse(int argc, char** argv);
+	ParseStatus getParseStatus() const;
+
+	const std::vector<std::string>& getStartupScripts() const {
+		return scriptOption.scripts;
+	}
+	const std::vector<std::string>& getStartupCommands() const {
+		return commandOption.commands;
+	}
+
+	MSXMotherBoard* getMotherBoard() const;
+	GlobalCommandController& getGlobalCommandController() const;
+	Interpreter& getInterpreter() const;
+
+	/** Need to suppress renderer window on startup?
+	  */
+	bool isHiddenStartup() const;
+
+private:
+	struct OptionData {
+		CLIOption* option;
+		ParsePhase phase;
+		unsigned length; // length in parameters
+	};
+
+	bool parseFileName(const std::string& arg,
+	                   span<std::string>& cmdLine);
+	CLIFileType* getFileTypeHandlerForFileName(std::string_view filename) const;
+	bool parseOption(const std::string& arg,
+	                 span<std::string>& cmdLine, ParsePhase phase);
+	void createMachineSetting();
+
+	std::vector<std::pair<std::string_view, OptionData>> options;
+	std::vector<std::pair<std::string_view, CLIFileType*>> fileTypes;
+
+	Reactor& reactor;
+
+	struct HelpOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} helpOption;
+
+	struct VersionOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} versionOption;
+
+	struct ControlOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} controlOption;
+
+	struct ScriptOption final : CLIOption, CLIFileType {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+		void parseFileType(const std::string& filename,
+				   span<std::string>& cmdLine) override;
+		std::string_view fileTypeCategoryName() const override;
+		std::string_view fileTypeHelp() const override;
+
+		std::vector<std::string> scripts;
+	} scriptOption;
+
+	struct CommandOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+
+		std::vector<std::string> commands;
+	} commandOption;
+
+	struct MachineOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} machineOption;
+
+	struct SettingOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} settingOption;
+
+	struct TestConfigOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} testConfigOption;
+
+	struct BashOption final : CLIOption {
+		void parseOption(const std::string& option, span<std::string>& cmdLine) override;
+		std::string_view optionHelp() const override;
+	} bashOption;
+
+	struct FileTypeCategoryInfoTopic final : InfoTopic {
+		FileTypeCategoryInfoTopic(InfoCommand& openMSXInfoCommand, const CommandLineParser& parser);
+		void execute(span<const TclObject> tokens, TclObject& result) const override;
+		std::string help(const std::vector<std::string>& tokens) const override;
+	private:
+		const CommandLineParser& parser;
+	};
+	std::unique_ptr<FileTypeCategoryInfoTopic> fileTypeCategoryInfo;
+
+	MSXRomCLI msxRomCLI;
+	CliExtension cliExtension;
+	ReplayCLI replayCLI;
+	SaveStateCLI saveStateCLI;
+	CassettePlayerCLI cassettePlayerCLI;
+#if COMPONENT_LASERDISC
+	LaserdiscPlayerCLI laserdiscPlayerCLI;
+#endif
+	DiskImageCLI diskImageCLI;
+	HDImageCLI hdImageCLI;
+	CDImageCLI cdImageCLI;
+	ParseStatus parseStatus;
+	bool haveConfig;
+	bool haveSettings;
+};
+
+} // namespace openmsx
+
+#endif

@@ -1,0 +1,63 @@
+Keyboard related settings in hardwareconfig.xml
+
+In section <PPI>...</PPI>:
+
+Setting name: key_ghosting
+Default value: true
+Description:
+If true, the emulator will press 'ghost' keys when user presses multiple keys
+at once on crossing rows/columns of the keyboard matrix.
+It must be set to true for all MSX models that suffer from this hardware problem
+
+Setting name: key_ghosting_sgc_protected
+Default value: true
+Description:
+If true, the key ghosting routine in the emulator will protect Shift, Graph
+and Code keys from key-ghosting. According to schematics and tests, several
+European machines have such a protection but some Japanese machines don't have it.
+In the protected machines, those three keys are connected to the keyboard matrix
+via a Diode, which prevents that pressing those two or more of those three
+keys together would ghost to other rows/columns via the 'character key' that you press
+in combination with them.
+
+
+Setting name: keyboard_type
+Default value: int
+Description:
+Indicates which type of keyboard the MSX has. It is used to load a file that
+maps unicode characters to the appropriate key-combinations on the MSX.
+The file-name will be: unicodemaps/unicode.<keyboard_type>
+
+Setting name: has_keypad
+Default value: true
+Description:
+Indicates if the emulated MSX model has a numeric keypad. If true, key-presses
+on the host numeric keypad will be mapped to corresponding key-presses on
+the MSX's numeric keypad.
+If false, key-presses on the host numeric keypad will be ignored. User can
+overrule this with a setting in the settings.xml file.
+
+Setting name: code_kana_locks
+Default value: false
+Description:
+When true, the the CODE/KANA key locks on the emulated machine. Is in practice the
+behaviour of all Japanese MSX models and of the VG8010.
+If false, CODE/KANA key does not lock (e.g. it is only active as long as the key is
+pressed)
+
+In section <PSG>...</PSG>:
+Setting name: keyboardlayout
+Default value: <empty>
+Description:
+Indicates if the "keyboard mode" flag (bit 6 on PSG register 14) must be set.
+It will be set to "1" if keyboardlayout is JIS. Otherwise it will be 0.
+In practice, this bit is only read by the Japanese ROM-BIOS to determine
+the keyboard layout; Japanese-JIS or Japanese-ANSI
+See http://map.tni.nl/articles/keymatrix.php for further details about
+Japanese keyboard layouts.
+Note that this setting is ignored by the keyboard driver of openMSX. The
+keyboard driver only looks at the keyboard_type parameter in the PPI
+section to determine which unicode to keycombination mapping to apply.
+
+
+Keyboard related settings are described in doc/commands.html
