@@ -58,6 +58,12 @@ class Library(object):
 			#       Trying a path relative to the compiler location would
 			#       probably work well.
 			return '/opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/bin/%s' % scriptName
+		elif platform == 'trimui' and cls.isSystemLibrary(platform):
+			# TODO: A generic mechanism for locating config scripts in SDKs.
+			#       Note that distroRoot is for non-system libs only.
+			#       Trying a path relative to the compiler location would
+			#       probably work well.
+			return '/opt/aarch64-linux-gnu-7.5.0-linaro/sysroot/usr/bin/%s' % scriptName
 		elif distroRoot is None:
 			return scriptName
 		else:
@@ -165,7 +171,7 @@ class FreeType(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 	@classmethod
 	def getConfigScript(cls, platform, linkStatic, distroRoot):
@@ -288,7 +294,7 @@ class LibPNG(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 class OGG(Library):
 	libName = 'ogg'
@@ -298,7 +304,7 @@ class OGG(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 class SDL2(Library):
 	libName = 'SDL2'
@@ -310,7 +316,7 @@ class SDL2(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 class SDL2_ttf(Library):
 	libName = 'SDL2_ttf'
@@ -321,7 +327,7 @@ class SDL2_ttf(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 	@classmethod
 	def getLinkFlags(cls, platform, linkStatic, distroRoot):
@@ -530,7 +536,7 @@ class Theora(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 class Vorbis(Library):
 	libName = 'vorbis'
@@ -541,7 +547,7 @@ class Vorbis(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 class ZLib(Library):
 	libName = 'z'
@@ -551,7 +557,7 @@ class ZLib(Library):
 
 	@classmethod
 	def isSystemLibrary(cls, platform):
-		return platform in ('dingux',)
+		return platform in ('dingux','trimui')
 
 	@classmethod
 	def getVersion(cls, platform, linkStatic, distroRoot):

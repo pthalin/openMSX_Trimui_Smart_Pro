@@ -32,6 +32,9 @@ GlobalSettings::GlobalSettings(GlobalCommandController& commandController_)
 #if PLATFORM_DINGUX
 		// For Dingux, LQ is good compromise between quality and performance
 		ResampledSoundDevice::RESAMPLE_LQ,
+#elif PLATFORM_TRIMUI
+		// For Trimui, LQ is good compromise between quality and performance
+		ResampledSoundDevice::RESAMPLE_LQ,
 #elif PLATFORM_ANDROID
 		// For Android, BLIP is good compromise between quality and performance
 		ResampledSoundDevice::RESAMPLE_BLIP,

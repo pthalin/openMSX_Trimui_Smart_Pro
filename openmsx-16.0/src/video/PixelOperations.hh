@@ -137,7 +137,43 @@ public:
 };
 #endif
 
+#if PLATFORM_TRIMUI
+// Specialization for Trimui (16bpp)
+//   We know the exact pixel format for this platform. No need for any
+//   members in this class. All values can also be compile-time constant.
+template<> class PixelOpBase<uint16_t>
+{
+public:
+	explicit PixelOpBase(const PixelFormat& /*format*/) {}
 
+	const PixelFormat& getPixelFormat() const
+	{
+		static PixelFormat format(16,
+			0x001F,  0, 3,
+			0x07E0,  5, 2,
+			0xF800, 11, 3,
+			0x0000,  0, 8);
+		return format;
+	}
+
+	inline int getRmask()  const { return 0x001F; }
+	inline int getGmask()  const { return 0x07E0; }
+	inline int getBmask()  const { return 0xF800; }
+	inline int getAmask()  const { return 0x0000; }
+	inline int getRshift() const { return  0; }
+	inline int getGshift() const { return  5; }
+	inline int getBshift() const { return 11; }
+	inline int getAshift() const { return  0; }
+	inline int getRloss()  const { return 3; }
+	inline int getGloss()  const { return 2; }
+	inline int getBloss()  const { return 3; }
+	inline int getAloss()  const { return 8; }
+
+	inline uint16_t getBlendMask() const { return 0xF7DE; }
+
+	static constexpr bool IS_RGB565 = true;
+};
+#endif
 
 template<typename Pixel> class PixelOperations : public PixelOpBase<Pixel>
 {

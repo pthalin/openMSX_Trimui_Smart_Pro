@@ -20,6 +20,7 @@ def iterBuildInfoHeader(targetPlatform, cpuName, flavour, installShareDir):
 
 	# TODO: Add support for device-specific configuration.
 	platformDingux = targetPlatform == 'dingux'
+	platformTrimui = targetPlatform == 'trimui'
 	platformPandora = targetPlatform == 'pandora'
 	platformAndroid = targetPlatform == 'android'
 
@@ -31,6 +32,8 @@ def iterBuildInfoHeader(targetPlatform, cpuName, flavour, installShareDir):
 
 	# Platform overrides.
 	if platformDingux:
+		maxScaleFactor = 1
+	elif platformTrimui:
 		maxScaleFactor = 1
 	elif platformAndroid:
 		# At the moment, libsdl android crashes when trying to dynamically change the scale factor
@@ -65,6 +68,7 @@ def iterBuildInfoHeader(targetPlatform, cpuName, flavour, installShareDir):
 	# Use a macro iso integer because we really need to exclude code sections
 	# based on this.
 	yield '#define PLATFORM_DINGUX %d' % platformDingux
+	yield '#define PLATFORM_TRIMUI %d' % platformTrimui
 	yield '#define PLATFORM_ANDROID %d' % platformAndroid
 	yield '#define HAVE_16BPP %d' % have16BPP
 	yield '#define HAVE_32BPP %d' % have32BPP
