@@ -1,9 +1,9 @@
 # openMSX for Trimui Smart Pro
 
 
-### Get your console here 
+### Get your console
 Please use these arfilliate links to support me!\
-[Trimui Smart Pro](https://s.click.aliexpress.com/e/_DDqcUHB)
+[Trimui Smart Pro](https://s.click.aliexpress.com/e/_DC7NNMZ)
 
 Accessories\
 [Protective Bag for Trimui Smart Pro](https://s.click.aliexpress.com/e/_DnKA17f) \
@@ -12,10 +12,10 @@ Accessories\
 [Thumb Grip for Trimui Smart Pro](https://s.click.aliexpress.com/e/_DDSaGWv)
 
 
-## How to install
+### How to install
 TODO
 
-## How to build
+### How to build
 TODO
 
 
