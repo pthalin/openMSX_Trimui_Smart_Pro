@@ -2,7 +2,7 @@
 
 
 ### Get your console
-Please use these arfilliate links to support me!\
+Please use these affiliate links to support me!\
 [Trimui Smart Pro](https://s.click.aliexpress.com/e/_DC7NNMZ)
 
 Accessories\
