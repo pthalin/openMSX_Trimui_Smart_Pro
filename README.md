@@ -9,7 +9,7 @@ Accessories\
 [Protective Bag for Trimui Smart Pro](https://s.click.aliexpress.com/e/_DnKA17f) \
 [Screen Protector for Trimui Smart Pro](https://s.click.aliexpress.com/e/_DCqp3jf) \
 [Silicon Case for Trimui Smart Pro](https://s.click.aliexpress.com/e/_Dk2vuOp) \
-[Thumb Grip for Trimui Smart Pro](https://s.click.aliexpress.com/e/_DDSaGWv)
+[Thumb Grip for Trimui Smart Pro](https://s.click.aliexpress.com/e/_Dm0gxmz)
 
 
 ### How to install
