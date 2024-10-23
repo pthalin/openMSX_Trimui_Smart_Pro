@@ -29,7 +29,7 @@
       "launch": "openmsx.sh"
     },
     {
-      "name": "openMsx (turboR)",
+      "name": "openMsx (Turbo R)",
       "launch": "openmsx_turbor.sh"
     }
   ]

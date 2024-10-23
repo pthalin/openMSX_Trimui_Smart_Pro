@@ -29,6 +29,10 @@
       "launch": "openmsx.sh"
     },
     {
+      "name": "openMsx (C-Bios MSX2+)",
+      "launch": "../MSX2/openmsx.sh"
+    },
+    {
       "name": "openMsx (Turbo R)",
       "launch": "../MSX2/openmsx_turbor.sh"
     }
