@@ -1,6 +1,6 @@
 # openMSX for Trimui Smart Pro
 
-<img height="200" src="images/trimui_smart_pro.jpg"> 
+<img height="250" width="640" src="images/trimui_smart_pro.jpg"> 
 
 ### How to get your console
 Please use these affiliate links when buying your Trimui to support me!  
@@ -14,9 +14,9 @@ Accessories for Trimui Smart Pro
 
 
 ### How to install
-IMPORTANT: You must have [Crossmix OS](https://github.com/cizia64/CrossMix-OS) installed to use openMSX.
+IMPORTANT: You must have [Crossmix OS](https://github.com/cizia64/CrossMix-OS) installed to use openMSX. Save yourself some headache by using a branded SDCARD of good quality and not the noname card that you may get when buying the device.
 
-Extract the release archive in the "Emus" folder on the SDCARD. Run the "EmuCleaner" App after installation.
+Extract the openMSX release archive in the "Emus" folder on the SDCARD. Run the "EmuCleaner" App after installation.
 
 ### How to use
 Select a game in the MSX or MSX2 category and press the X button. This brings up a menu where you can select diffrent configurations.
@@ -34,7 +34,10 @@ R1 - Quick save state.
 L1 - Quick load state.  
 R2/L2 - Toggle Show FPS.
 
+NOTE: Running Turbo R requires system roms to be installed. These will be automatically downloaded the first time you run Turbo R if you are connected to wifi.
+
 ### How to build
+You need Linux to build.  
 Install the [patched SDK](https://github.com/pthalin/SDK_Trimui_Smart_Pro)  
 Run "source build.sh" in the top dir.
 
