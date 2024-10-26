@@ -625,7 +625,7 @@ proc get_slot_str {slot} {
 }
 proc create_slot_menu_def {slots path listtype menutitle create_action_proc} {
 	set menudef {
-		font-size 8
+		font-size 10
 		border-size 2
 		width 150
 		xpos 100
@@ -680,12 +680,12 @@ proc create_media_menu_items {file_type_category} {
 #
 proc create_main_menu {} {
 	set menu_def {
-		font-size 10
+		font-size 12
 		border-size 2
 		width 160
 	}
-	lappend items { textexpr "[openmsx_info version]"
-	         font-size 12
+	lappend items { textexpr "openMSX"
+	         font-size 14
 	         post-spacing 6
 	         selectable false }
 	lappend items {*}[create_media_menu_items "rom"]
@@ -740,13 +740,13 @@ proc create_main_menu {} {
 }
 
 set misc_setting_menu {
-	font-size 8
+	font-size 10
 	border-size 2
 	width 160
 	xpos 100
 	ypos 120
 	items {{ text "Misc Settings"
-	         font-size 10
+	         font-size 12
 	         post-spacing 6
 	         selectable false }
 	       { textexpr "Speed: ${speed}%"
@@ -769,13 +769,13 @@ set misc_setting_menu {
 set resampler_desc [dict create fast "fast (but low quality)" blip "blip (good speed/quality)" hq "hq (best but uses more CPU)"]
 
 set sound_setting_menu {
-	font-size 8
+	font-size 10
 	border-size 2
 	width 180
 	xpos 100
 	ypos 120
 	items {{ text "Sound Settings"
-	         font-size 10
+	         font-size 12
 	         post-spacing 6
 	         selectable false }
 	       { textexpr "Volume: $master_volume"
@@ -795,13 +795,13 @@ set horizontal_stretch_desc [dict create 320.0 "none (large borders)" 288.0 "a b
 proc menu_create_sound_device_list {} {
 	set menu_def {
 	         execute menu_sound_device_select_exec
-	         font-size 8
+	         font-size 10
 	         border-size 2
 	         width 200
 	         xpos 110
 	         ypos 130
 	         header { text "Select Sound Chip"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }}
 
 	set items [machine_info sounddevice]
@@ -817,13 +817,13 @@ proc menu_sound_device_select_exec {item} {
 proc create_sound_device_settings_menu {device} {
 	set ypos 140
 	set menu_def [list \
-		font-size 8 \
+		font-size 10 \
 		border-size 2 \
 		width 210 \
 		xpos 120 \
 		ypos $ypos]
 	lappend items [list text "$device Settings" \
-	         font-size 10 \
+	         font-size 12 \
 	         post-spacing 6 \
 	         selectable false]
 
@@ -892,14 +892,14 @@ proc create_video_setting_menu {} {
 	variable scaling_available
 
 	set menu_def {
-		font-size 8
+		font-size 10
 		border-size 2
 		width 210
 		xpos 100
 		ypos 110
 	}
 	lappend items { text "Video Settings"
-	         font-size 10
+	         font-size 12
 	         post-spacing 6
 	         selectable false }
 	if {[expr {[lindex [lindex [openmsx_info setting videosource] 2] 1] > 1}]} {
@@ -959,14 +959,14 @@ proc create_video_setting_menu {} {
 proc create_hardware_menu {} {
 
 	set menu_def {
-		font-size 8
+		font-size 10
 		border-size 2
 		width 175
 		xpos 100
 		ypos 120
 	}
 	lappend items { text "Hardware"
-			 font-size 10
+			 font-size 12
 			 post-spacing 6
 			 selectable false }
 	lappend items { text "Change Machine..."
@@ -988,13 +988,13 @@ proc create_hardware_menu {} {
 }
 
 set extensions_menu {
-	font-size 8
+	font-size 10
 	border-size 2
 	width 175
 	xpos 100
 	ypos 120
 	items {{ text "Extensions"
-	         font-size 10
+	         font-size 12
 	         post-spacing 6
 	         selectable false }
 	       { text "Add..."
@@ -1003,13 +1003,13 @@ set extensions_menu {
 	         actions { A { osd_menu::menu_create [osd_menu::menu_create_plugged_extensions_list] }}}}}
 
 set advanced_menu {
-	font-size 8
+	font-size 10
 	border-size 2
 	width 175
 	xpos 100
 	ypos 120
 	items {{ text "Advanced"
-	         font-size 10
+	         font-size 12
 	         post-spacing 6
 	         selectable false }
 	       { text "Manage Running Machines..."
@@ -1018,13 +1018,13 @@ set advanced_menu {
 	         actions { A { osd_menu::menu_create [osd_menu::menu_create_toys_list] }}}}}
 
 set running_machines_menu {
-	font-size 8
+	font-size 10
 	border-size 2
 	width 175
 	xpos 100
 	ypos 120
 	items {{ text "Manage Running Machines"
-	         font-size 10
+	         font-size 12
 	         post-spacing 6
 	         selectable false }
 	       { textexpr "Select Running Machine Tab: [utils::get_machine_display_name]"
@@ -1037,13 +1037,13 @@ set running_machines_menu {
 proc menu_create_running_machine_list {} {
 	set menu_def {
 	         execute menu_machine_tab_select_exec
-	         font-size 8
+	         font-size 10
 	         border-size 2
 	         width 200
 	         xpos 110
 	         ypos 130
 	         header { text "Select Running Machine"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }}
 
 	set items [utils::get_ordered_machine_list]
@@ -1087,13 +1087,13 @@ proc menu_create_stretch_list {} {
 
 	set menu_def [list \
 	         execute menu_stretch_exec \
-	         font-size 8 \
+	         font-size 10 \
 	         border-size 2 \
 	         width 150 \
 	         xpos 110 \
 	         ypos 130 \
 	         header { text "Select Horizontal Stretch:"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }]
 
 	set items [list]
@@ -1156,13 +1156,13 @@ proc menu_create_load_machine_list {{mode "replace"}} {
 
 	set menu_def [list \
 	         execute $proc_to_exec \
-	         font-size 8 \
+	         font-size 10 \
 	         border-size 2 \
 	         width 200 \
 	         xpos 110 \
 	         ypos 130 \
 	         header { text "Select Machine to Run"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }]
 
 	set items [get_filtered_configs machines]
@@ -1210,13 +1210,13 @@ proc menu_load_machine_exec_add {item} {
 proc menu_create_extensions_list {} {
 	set menu_def {
 	         execute menu_add_extension_exec
-	         font-size 8
+	         font-size 10
 	         border-size 2
 	         width 200
 	         xpos 110
 	         ypos 130
 	         header { text "Select Extension to Add"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }}
 
 	set items [get_filtered_configs extensions]
@@ -1250,13 +1250,13 @@ proc menu_add_extension_exec {item} {
 proc menu_create_plugged_extensions_list {} {
 	set menu_def {
 	         execute menu_remove_extension_exec
-	         font-size 8
+	         font-size 10
 	         border-size 2
 	         width 200
 	         xpos 110
 	         ypos 130
 	         header { text "Select Extension to Remove"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }}
 
 	set items [list_extensions]
@@ -1287,13 +1287,13 @@ proc menu_remove_extension_exec {item} {
 proc menu_create_connectors_list {} {
 	set menu_def {
 	         execute menu_connector_exec
-	         font-size 8
+	         font-size 10
 	         border-size 2
 	         width 200
 	         xpos 100
 	         ypos 120
 	         header { text "Connectors"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }}
 
 	set items [machine_info connector]
@@ -1320,13 +1320,13 @@ proc menu_connector_exec {item} {
 proc create_menu_pluggable_list {connector} {
 	set menu_def [list \
 	         execute [list menu_plug_exec $connector] \
-	         font-size 8 \
+	         font-size 10 \
 	         border-size 2 \
 	         width 200 \
 	         xpos 110 \
 	         ypos 140 \
 	         header [list text "What to Plug into [machine_info connector $connector]?" \
-	                  font-size 10 \
+	                  font-size 12 \
 	                  post-spacing 6 ]]
 
 	set items [list]
@@ -1389,13 +1389,13 @@ proc menu_plug_exec {connector pluggable} {
 proc menu_create_toys_list {} {
 	set menu_def {
 	         execute menu_toys_exec
-	         font-size 8
+	         font-size 10
 	         border-size 2
 	         width 200
 	         xpos 100
 	         ypos 120
 	         header { text "Toys and Utilities"
-	                  font-size 10
+	                  font-size 12
 	                  post-spacing 6 }}
 
 	set items [list]
@@ -1466,13 +1466,13 @@ proc is_empty_dir {directory extensions} {
 
 proc menu_create_rom_list {path slot} {
 	set menu_def [list execute [list menu_select_rom $slot] \
-		font-size 8 \
+		font-size 10 \
 		border-size 2 \
 		width 200 \
 		xpos 100 \
 		ypos 120 \
 		header { textexpr "ROMs $::osd_rom_path" \
-			font-size 10 \
+			font-size 12 \
 			post-spacing 6 }]
 	set extensions "rom|ri|mx1|mx2|zip|gz"
 	set items [list]
@@ -1594,13 +1594,13 @@ proc menu_rom_with_mappertype_exec {slot fullname mappertype} {
 
 proc menu_create_mappertype_list {slot fullname} {
 	set menu_def [list execute [list menu_rom_with_mappertype_exec $slot $fullname] \
-	         font-size 8 \
+	         font-size 10 \
 	         border-size 2 \
 	         width 200 \
 	         xpos 100 \
 	         ypos 120 \
 	         header { text "Select mapper type" \
-	                  font-size 10 \
+	                  font-size 12 \
 	                  post-spacing 6 }]
 
 	set items [openmsx_info romtype]
@@ -1624,13 +1624,13 @@ proc menu_create_mappertype_list {slot fullname} {
 
 proc menu_create_disk_list {path drive} {
 	set menu_def [list execute [list menu_select_disk $drive] \
-		font-size 8 \
+		font-size 10 \
 		border-size 2 \
 		width 200 \
 		xpos 100 \
 		ypos 120 \
 		header { textexpr "Disks $::osd_disk_path" \
-			font-size 10 \
+			font-size 12 \
 			post-spacing 6 }]
 	set cur_image [lindex [$drive] 1]
 	set extensions "dsk|zip|gz|xsa|dmk|di1|di2|fd?|1|2|3|4|5|6|7|8|9"
@@ -1698,13 +1698,13 @@ proc menu_create_tape_list {path} {
 	variable taperecordings_directory
 
 	set menu_def { execute menu_select_tape
-		font-size 8
+		font-size 10
 		border-size 2
 		width 200
 		xpos 100
 		ypos 120
 		header { textexpr "Tapes $::osd_tape_path"
-			font-size 10
+			font-size 12
 			post-spacing 6 }}
 	set extensions "cas|wav|zip|gz"
 
@@ -1738,7 +1738,7 @@ proc menu_create_tape_list {path} {
 	set presentation [concat $presentation $files]
 
 	lappend menu_def presentation $presentation
-	return [prepare_menu_list $items 10 $menu_def]
+	return [prepare_menu_list $items 7 $menu_def]
 }
 
 proc menu_select_tape {item} {
@@ -1789,13 +1789,13 @@ proc menu_create_hdd_list {path drive} {
 	return [prepare_menu_list [ls $path "dsk|zip|gz|hdd"] \
 	                          10 \
 	                          [list execute [list menu_select_hdd $drive]\
-	                            font-size 8 \
+	                            font-size 10 \
 	                            border-size 2 \
 	                            width 200 \
 	                            xpos 100 \
 	                            ypos 120 \
 	                            header { textexpr "Hard disk images $::osd_hdd_path"
-	                                     font-size 10
+	                                     font-size 12
 	                                     post-spacing 6 }]]
 }
 
@@ -1827,13 +1827,13 @@ proc confirm_change_hdd {item result} {
 
 proc menu_create_ld_list {path} {
 	set menu_def [list execute menu_select_ld \
-		font-size 8 \
+		font-size 10 \
 		border-size 2 \
 		width 200 \
 		xpos 100 \
 		ypos 120 \
 		header { textexpr "LaserDiscs $::osd_ld_path" \
-			font-size 10 \
+			font-size 12 \
 			post-spacing 6 }]
 	set cur_image [lindex [laserdiscplayer] 1]
 	set extensions "ogv"
@@ -1887,7 +1887,7 @@ proc get_savestates_list_presentation_sorted {} {
 proc menu_create_load_state {} {
 	set menu_def \
 	       { execute menu_loadstate_exec
-	         font-size 8
+	         font-size 12
 	         border-size 2
 	         width 200
 	         xpos 100
@@ -1897,21 +1897,21 @@ proc menu_create_load_state {} {
 	         on-select   menu_loadstate_select
 	         on-deselect menu_loadstate_deselect
 	         header { text "Load State"
-	                  font-size 10
+	                  font-size 14
 	                  post-spacing 6 }}
 
 	set items [list_savestates -t]
 
 	lappend menu_def presentation [get_savestates_list_presentation_sorted]
 
-	return [prepare_menu_list $items 10 $menu_def]
+	return [prepare_menu_list $items 7 $menu_def]
 }
 
 proc menu_create_save_state {} {
 	set items [concat [list "create new"] [list_savestates -t]]
 	set menu_def \
 	       { execute menu_savestate_exec
-	         font-size 8
+	         font-size 12
 	         border-size 2
 	         width 200
 	         xpos 100
@@ -1921,13 +1921,13 @@ proc menu_create_save_state {} {
 	         on-select   menu_loadstate_select
 	         on-deselect menu_loadstate_deselect
 	         header { text "Save State"
-	                  font-size 10
+	                  font-size 14
 	                  post-spacing 6 }}
 
 
 	lappend menu_def presentation [concat [list "create new"] [get_savestates_list_presentation_sorted]]
 
-	return [prepare_menu_list $items 10 $menu_def]
+	return [prepare_menu_list $items 7 $menu_def]
 }
 
 proc menu_loadstate_select {item} {
@@ -1984,13 +1984,13 @@ proc menu_free_savestate_name {} {
 proc confirm_action {text action item} {
 	set items [list "No" "Yes"]
 	set menu_def [list execute [list $action $item] \
-			font-size 8 \
+			font-size 10 \
 			border-size 2 \
 			width 210 \
 			xpos 100 \
 			ypos 100 \
 			header [list text $text \
-					font-size 10 \
+					font-size 12 \
 					post-spacing 6 ]]
 
 	osd_menu::menu_create [osd_menu::prepare_menu_list $items [llength $items] $menu_def]
