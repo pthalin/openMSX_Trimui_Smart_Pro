@@ -34,6 +34,8 @@ R1 - Quick save state.
 L1 - Quick load state.  
 R2/L2 - Toggle Show FPS.
 
+NOTE: For the game [Pampas & Selene](https://www.unepicfran.com/en/msx_pampas.html) use "openMsx (C-Bios MSX2+)" with the file "pampas_e.rom" to automatically apply the needed configuration.
+
 NOTE: Running Turbo R requires system roms to be installed. These will be automatically downloaded the first time you run Turbo R if you are connected to wifi.
 
 ### How to build

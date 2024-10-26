@@ -1,28 +1,23 @@
 #!/bin/sh
-# Startup script for openMSX.
-# Run this to start openMSX; running the executable directly does not work.
 
-#TODO: Check if we have sysroms. If not downlaod from file-hunter.com
+OM_DIR=/mnt/SDCARD/Emus/MSX2/openmsx
+EMU_DIR=/mnt/SDCARD/Emus/MSX2
 
-rom_path=$(realpath "$1")
+ROM_FILE=$(realpath "$1")
 
-rom_name=$(echo $1 | tr '[:upper:]' '[:lower:]')
-
-echo $rom_path
-
-cd /mnt/SDCARD/Emus/MSX2/openmsx
+cd $OM_DIR
 
 export OPENMSX_SYSTEM_DATA=$PWD/share
+export HOME=$EMU_DIR
 
+rom_name=$(echo $1 | tr '[:upper:]' '[:lower:]')
 case "$rom_name" in
  *"pampas"* )
    echo "pampas"
-   exec bin/openmsx -machine C-BIOS_MSX2+ -ext MegaFlashROM_SCC+_SD "$rom_path" -romtype KonamiUltimateCollection
+   exec bin/openmsx -machine C-BIOS_MSX2+ -ext MegaFlashROM_SCC+_SD "$ROM_FILE" -romtype KonamiUltimateCollection
    ;;
  * )
    echo "Other"
-   exec bin/openmsx -machine C-BIOS_MSX2+ "$rom_path"
+   exec bin/openmsx -machine C-BIOS_MSX2+ "$ROM_FILE"
    ;;
 esac
-
-cd ..

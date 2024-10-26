@@ -1,13 +1,14 @@
 #!/bin/sh
-# Startup script for openMSX.
-# Run this to start openMSX; running the executable directly does not work.
 
-rom_path=$(realpath "$1")
+OM_DIR=/mnt/SDCARD/Emus/MSX2/openmsx
+EMU_DIR=/mnt/SDCARD/Emus/MSX2
 
-cd /mnt/SDCARD/Emus/MSX2/openmsx
+ROM_FILE=$(realpath "$1")
+
+cd $OM_DIR
+
 
 export OPENMSX_SYSTEM_DATA=$PWD/share
+export HOME=$EMU_DIR
 
-exec bin/openmsx -machine C-BIOS_MSX1 "$rom_path"
-
-
+exec bin/openmsx -machine C-BIOS_MSX1 "$ROM_FILE"
