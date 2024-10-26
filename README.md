@@ -16,7 +16,7 @@ Accessories for Trimui Smart Pro
 ### How to install
 IMPORTANT: You must have [Crossmix OS](https://github.com/cizia64/CrossMix-OS) installed to use openMSX. Save yourself some headache by using a branded SDCARD of good quality and not the noname card that you may get when buying the device.
 
-Extract the openMSX release archive in the "Emus" folder on the SDCARD. Run the "EmuCleaner" App after installation.
+Extract the openMSX release archive in the "Emus" folder on the SDCARD (overwrite existing files). Run the "EmuCleaner" App after installation.
 
 ### How to use
 Select a game in the MSX or MSX2 category and press the X button. This brings up a menu where you can select diffrent configurations.
@@ -34,9 +34,13 @@ R1 - Quick save state.
 L1 - Quick load state.  
 R2/L2 - Toggle Show FPS.
 
-NOTE: For the game [Pampas & Selene](https://www.unepicfran.com/en/msx_pampas.html) use "openMsx (C-Bios MSX2+)" with the file "pampas_e.rom" to automatically apply the needed configuration.
+NOTE: Save States can be removed by deleting the .oms file in the folder "Emus/MSX2/.openMSX/savestates" folder.
+
+NOTE: For the game [Pampas & Selene](https://www.unepicfran.com/en/msx_pampas.html) use "openMsx (C-Bios MSX2+)" with the file "pampas_e.rom" to automatically apply the needed configuration. The rom files may also be renamed to "Pampas & Selene.rom".
 
 NOTE: Running Turbo R requires system roms to be installed. These will be automatically downloaded the first time you run Turbo R if you are connected to wifi.
+
+
 
 ### How to build
 You need Linux to build.  
