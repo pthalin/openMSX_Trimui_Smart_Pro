@@ -172,6 +172,10 @@ SDLSurfacePtr load(const std::string& filename, bool want32bpp)
 				}
 			}
 		}
+		
+		// Quick and dirty fix for Trimui
+		bgr = false;  swapAlpha = false;
+		
 		if (bgr)       png_set_bgr       (png.ptr);
 		if (swapAlpha) png_set_swap_alpha(png.ptr);
 
