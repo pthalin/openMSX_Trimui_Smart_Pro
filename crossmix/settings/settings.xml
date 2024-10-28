@@ -6,7 +6,7 @@
 	that are different from the openMSX defaults.
 	-->
   <settings>
-    <setting id="joystick1_config">LEFT L_hat0 RIGHT R_hat0 UP U_hat0 DOWN D_hat0 A {button0} B {button1}</setting>
+    <setting id="joystick1_config">LEFT L_hat0 RIGHT R_hat0 UP U_hat0 DOWN D_hat0 B {button0} A {button1}</setting>
   </settings>
   <bindings>
     <bind key="joy1 button8 down">main_menu_toggle</bind>

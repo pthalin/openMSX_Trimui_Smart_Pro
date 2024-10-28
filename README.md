@@ -26,8 +26,8 @@ Button mapping in openMSX
 MENU - Open the Main Menu.  
 START - Show/Hide the On-screen Keyboard.  
 SELECT - Toggle 50/60 Hz (MSX2+/Turbo R only).  
-B - Primary fire.  
-A - Secondary fire.  
+A - Primary fire.  
+B - Secondary fire.  
 Y - Enable auto-fire (Turbo R only).  
 X - Diable auto-fire (Turbo R only).  
 R1 - Quick save state.  
@@ -40,14 +40,12 @@ NOTE: For the game [Pampas & Selene](https://www.unepicfran.com/en/msx_pampas.ht
 
 NOTE: Running Turbo R requires system roms to be installed. These will be automatically downloaded the first time you run Turbo R if you are connected to wifi.
 
-
-
 ### How to build
 You need Linux to build.  
 Install the [patched SDK](https://github.com/pthalin/SDK_Trimui_Smart_Pro)  
 Run "source build.sh" in the top dir.
-
-
+  
+  
 Donation using [Ko-Fi](https://ko-fi.com/patriksretrotech) or [PayPal](https://www.paypal.com/donate/?business=UCTJFD6L7UYFL&no_recurring=0&item_name=Please+support+me%21&currency_code=SEK) are highly appreciated!
 
 This is a based on [https://github.com/openMSX/openMSX](https://github.com/openMSX/openMSX).

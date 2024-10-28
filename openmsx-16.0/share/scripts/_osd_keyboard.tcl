@@ -83,9 +83,9 @@ proc enable_osd_keyboard {} {
 		bind -layer osd_keyboard "keyb LCTRL,RELEASE" {osd_keyboard::selection_release}
 		bind -layer osd_keyboard "keyb LALT"          {osd_keyboard::key_hold_toggle true }
 	} else {
-		bind -layer osd_keyboard "OSDcontrol A PRESS"    {osd_keyboard::selection_press  }
-		bind -layer osd_keyboard "OSDcontrol A RELEASE"  {osd_keyboard::selection_release}
-		bind -layer osd_keyboard "OSDcontrol B PRESS"          {osd_keyboard::key_hold_toggle true }
+		bind -layer osd_keyboard "OSDcontrol B PRESS"    {osd_keyboard::selection_press  }
+		bind -layer osd_keyboard "OSDcontrol B RELEASE"  {osd_keyboard::selection_release}
+		bind -layer osd_keyboard "OSDcontrol A PRESS"          {osd_keyboard::key_hold_toggle true }
 	}
 	activate_input_layer osd_keyboard -blocking
 

@@ -411,8 +411,8 @@ proc do_menu_open {top_menu} {
 		bind -layer osd_menu "keyb LCTRL"  {osd_menu::menu_action A    }
 		bind -layer osd_menu "keyb LALT"   {osd_menu::menu_action B    }
 	} else {
-		bind -layer osd_menu "OSDcontrol A PRESS" {osd_menu::menu_action A }
-		bind -layer osd_menu "OSDcontrol B PRESS" {osd_menu::menu_action B }
+		bind -layer osd_menu "OSDcontrol A PRESS" {osd_menu::menu_action B }
+		bind -layer osd_menu "OSDcontrol B PRESS" {osd_menu::menu_action A }
 		# on Android, use BACK button to go back in menus
 		bind -layer osd_menu "keyb BACK"      {osd_menu::menu_action B }
 	}
@@ -684,10 +684,21 @@ proc create_main_menu {} {
 		border-size 2
 		width 160
 	}
-	lappend items { textexpr "openMSX"
-	         font-size 14
-	         post-spacing 6
+	lappend items { text "openMSX"
+	         font-size 16
+			 text-color 0x303030ff
+	         post-spacing 2
 	         selectable false }
+	lappend items { text "Pocket Penguin - 1.0"
+	         font-size 10
+			 text-color 0x505050ff
+	         post-spacing 4
+	         selectable false }
+	lappend items { text "Save State..."
+	         actions { A { osd_menu::menu_create [osd_menu::menu_create_save_state] }}}
+	lappend items { text "Load State..."
+	         actions { A { osd_menu::menu_create [osd_menu::menu_create_load_state] }}
+	         post-spacing 3 }
 	lappend items {*}[create_media_menu_items "rom"]
 	lappend items {*}[create_media_menu_items "disk"]
 	if {[info command hda] ne ""} {; # only exists when hard disk extension available
@@ -713,24 +724,19 @@ proc create_main_menu {} {
 	         actions { A { osd_menu::menu_create [osd_menu::menu_create_tape_list $::osd_tape_path]; catch { osd_menu::select_menu_item [file tail [lindex [cassetteplayer] 1]]}} }
 	         post-spacing 3 }
 	}
-	lappend items { text "Save State..."
-	         actions { A { osd_menu::menu_create [osd_menu::menu_create_save_state] }}}
-	lappend items { text "Load State..."
-	         actions { A { osd_menu::menu_create [osd_menu::menu_create_load_state] }}
-	         post-spacing 3 }
-	lappend items { text "Hardware..."
-	         actions { A { osd_menu::menu_create [osd_menu::create_hardware_menu] }}
-	         post-spacing 3 }
-	lappend items { text "Misc Settings..."
-	         actions { A { osd_menu::menu_create $osd_menu::misc_setting_menu }}}
+	#lappend items { text "Hardware..."
+	#         actions { A { osd_menu::menu_create [osd_menu::create_hardware_menu] }}
+	#         post-spacing 3 }
+	#lappend items { text "Misc Settings..."
+	#        actions { A { osd_menu::menu_create $osd_menu::misc_setting_menu }}}
 	lappend items { text "Sound Settings..."
 	         actions { A { osd_menu::menu_create $osd_menu::sound_setting_menu }}}
 	lappend items { text "Video Settings..."
 	         actions { A { osd_menu::menu_create [osd_menu::create_video_setting_menu] }}
-	         post-spacing 3 }
-	lappend items { text "Advanced..."
-	         actions { A { osd_menu::menu_create $osd_menu::advanced_menu }}
-	         post-spacing 10 }
+	         post-spacing 6 }
+	#lappend items { text "Advanced..."
+	#         actions { A { osd_menu::menu_create $osd_menu::advanced_menu }}
+	#         post-spacing 10 }
 	lappend items { text "Reset MSX"
 	         actions { A { reset; osd_menu::menu_close_all }}}
 	lappend items { text "Exit openMSX"
@@ -1495,7 +1501,7 @@ proc menu_create_rom_list {path slot} {
 	set presentation [concat $presentation $files]
 
 	lappend menu_def presentation $presentation
-	return [prepare_menu_list $items 10 $menu_def]
+	return [prepare_menu_list $items 7 $menu_def]
 }
 
 proc menu_select_rom {slot item {open_main false}} {
@@ -1619,7 +1625,7 @@ proc menu_create_mappertype_list {slot fullname} {
 	}
 
 	lappend menu_def presentation $presentation_sorted
-	return [prepare_menu_list $items_sorted 10 $menu_def]
+	return [prepare_menu_list $items_sorted 7 $menu_def]
 }
 
 proc menu_create_disk_list {path drive} {
@@ -1660,7 +1666,7 @@ proc menu_create_disk_list {path drive} {
 	set presentation [concat $presentation $files]
 
 	lappend menu_def presentation $presentation
-	return [prepare_menu_list $items 10 $menu_def]
+	return [prepare_menu_list $items 7 $menu_def]
 }
 
 proc menu_select_disk {drive item {dummy false}} {
@@ -1787,7 +1793,7 @@ proc menu_free_tape_name {} {
 
 proc menu_create_hdd_list {path drive} {
 	return [prepare_menu_list [ls $path "dsk|zip|gz|hdd"] \
-	                          10 \
+	                          7 \
 	                          [list execute [list menu_select_hdd $drive]\
 	                            font-size 10 \
 	                            border-size 2 \
@@ -1849,7 +1855,7 @@ proc menu_create_ld_list {path} {
 	set presentation [concat $presentation $files]
 
 	lappend menu_def presentation $presentation
-	return [prepare_menu_list $items 10 $menu_def]
+	return [prepare_menu_list $items 7 $menu_def]
 }
 
 proc menu_select_ld {item} {
