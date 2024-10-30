@@ -1,6 +1,6 @@
 # openMSX for Trimui Smart Pro
 
-<img height="250" width="640" src="images/trimui_smart_pro.jpg"> 
+<img height="50%" src="images/trimui_smart_pro.jpg"> 
 
 ### How to get your console
 Please use these affiliate links when buying your Trimui to support me!  
