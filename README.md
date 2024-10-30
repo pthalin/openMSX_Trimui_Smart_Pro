@@ -49,7 +49,7 @@ Run "source build.sh" in the top dir.
 Q: Why is it based on an old verion of openMSX?  
 A: The compiler (GCC) for the Trimui is an old version and newer versions of openMSX requires a more recent version of the compiler.
 
-## Who to Support Development 
+## Thanks! 
 Donation using [Ko-Fi](https://ko-fi.com/patriksretrotech) or [PayPal](https://www.paypal.com/donate/?business=UCTJFD6L7UYFL&no_recurring=0&item_name=Please+support+me%21&currency_code=SEK) are highly appreciated!
 
 This is a based on [openMSX](https://github.com/openMSX/openMSX). A big thank you to the developers of openMSX for making an awsome emulator and providing help so I could complete this. 
