@@ -52,5 +52,4 @@ A: The compiler (GCC) for the Trimui is an old version and newer versions of ope
 ## Who to Support Development 
 Donation using [Ko-Fi](https://ko-fi.com/patriksretrotech) or [PayPal](https://www.paypal.com/donate/?business=UCTJFD6L7UYFL&no_recurring=0&item_name=Please+support+me%21&currency_code=SEK) are highly appreciated!
 
-This is a based on [https://github.com/openMSX/openMSX](https://github.com/openMSX/openMSX).
-A big thank you to the developers of openMSX for making this awsome emulator and providing support so I could comple this. 
+This is a based on [openMSX](https://github.com/openMSX/openMSX). A big thank you to the developers of openMSX for making an awsome emulator and providing help so I could complete this. 
