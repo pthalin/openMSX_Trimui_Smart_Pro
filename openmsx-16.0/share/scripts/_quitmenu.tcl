@@ -6,7 +6,7 @@ namespace eval quitmenu {
 			{ execute quitmenu::quit_menu_exec
 				font-size 12
 				border-size 2
-				width 160
+				width 154
 				xpos 80
 				ypos 100
 				header { text "Really exit openMSX?"

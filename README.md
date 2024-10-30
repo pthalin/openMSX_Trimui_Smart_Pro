@@ -44,8 +44,12 @@ NOTE: Running Turbo R requires system roms to be installed. These will be automa
 You need Linux to build.  
 Install the [patched SDK](https://github.com/pthalin/SDK_Trimui_Smart_Pro)  
 Run "source build.sh" in the top dir.
-  
-  
+
+## FAQ
+Q: Why is it based on an old verion of openMSX?  
+A: The compiler (GCC) for the Trimui is an old version and newer versions of openMSX requires a more recent version of the compiler.
+
+## Who to Support Development 
 Donation using [Ko-Fi](https://ko-fi.com/patriksretrotech) or [PayPal](https://www.paypal.com/donate/?business=UCTJFD6L7UYFL&no_recurring=0&item_name=Please+support+me%21&currency_code=SEK) are highly appreciated!
 
 This is a based on [https://github.com/openMSX/openMSX](https://github.com/openMSX/openMSX).
