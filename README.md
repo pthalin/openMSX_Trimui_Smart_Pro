@@ -33,6 +33,11 @@ X - Diable auto-fire (Turbo R only).
 R1 - Quick save state.  
 L1 - Quick load state.  
 R2/L2 - Toggle Show FPS.
+  
+<p float="left">
+<img width="300" src="images/osd_keyboard.png">
+<img width="300" src="images/load_state.png"> 
+</p>
 
 NOTE: Save States can be removed by deleting the .oms file in the folder "Emus/MSX2/.openMSX/savestates" folder.
 
