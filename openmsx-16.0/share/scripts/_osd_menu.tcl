@@ -1898,7 +1898,7 @@ proc menu_create_load_state {} {
 	         width 200
 	         xpos 100
 	         ypos 120
-	         on-open  {osd create rectangle "preview" -x 225 -y 5 -w 90 -h 70 -rgba 0x30303080 -scaled true}
+	         on-open  {osd create rectangle "preview" -x 182 -y 5 -w 130 -h 100 -rgba 0x30303080 -scaled true}
 	         on-close {osd destroy "preview"}
 	         on-select   menu_loadstate_select
 	         on-deselect menu_loadstate_deselect
@@ -1922,7 +1922,7 @@ proc menu_create_save_state {} {
 	         width 200
 	         xpos 100
 	         ypos 120
-	         on-open  {osd create rectangle "preview" -x 225 -y 5 -w 90 -h 70 -rgba 0x30303080 -scaled true}
+	         on-open  {osd create rectangle "preview" -x 182 -y 5 -w 130 -h 100 -rgba 0x30303080 -scaled true}
 	         on-close {osd destroy "preview"}
 	         on-select   menu_loadstate_select
 	         on-deselect menu_loadstate_deselect
@@ -1938,7 +1938,7 @@ proc menu_create_save_state {} {
 
 proc menu_loadstate_select {item} {
 	set png $::env(OPENMSX_USER_DATA)/../savestates/${item}.png
-	catch {osd create rectangle "preview.image" -relx 0.05 -rely 0.05 -w 80 -h 60 -image $png}
+	catch {osd create rectangle "preview.image" -relx 0.04 -rely 0.05 -w 120 -h 90 -image $png}
 }
 
 proc menu_loadstate_deselect {item} {
