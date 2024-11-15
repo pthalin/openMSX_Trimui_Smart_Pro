@@ -12,6 +12,10 @@ export HOME=$EMU_DIR
 
 rom_name=$(echo $1 | tr '[:upper:]' '[:lower:]')
 case "$rom_name" in
+ *".dsk"* )
+  /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "C-Bios does not supppor .dsk files. Please use Turbo-R." -k " "
+  exit
+  ;;
  *"pampas"* )
    echo "pampas"
    exec bin/openmsx -machine C-BIOS_MSX2+ -ext MegaFlashROM_SCC+_SD "$ROM_FILE" -romtype KonamiUltimateCollection
