@@ -33,6 +33,10 @@
       "launch": "../MSX2/openmsx.sh"
     },
     {
+      "name": "openMsx (MSX2+)",
+      "launch": "../MSX2/openmsx_msx2plus.sh"
+    },
+    {
       "name": "openMsx (Turbo R)",
       "launch": "../MSX2/openmsx_turbor.sh"
     }

@@ -29,6 +29,10 @@
       "launch": "openmsx.sh"
     },
     {
+      "name": "openMsx (MSX2+)",
+      "launch": "openmsx_msx2plus.sh"
+    },
+    {
       "name": "openMsx (Turbo R)",
       "launch": "openmsx_turbor.sh"
     }
