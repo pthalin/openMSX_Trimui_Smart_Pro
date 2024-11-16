@@ -17,6 +17,7 @@ SYS_ROMS=" fs-a1wsx_basic-bios2p.rom
  fs-a1wsx_firmware.rom
  fs-a1wsx_fmbasic.rom
  fs-a1wsx_kanjibasic.rom
+ fs-a1wsx_kanjifont.rom
  fs-a1wsx_msx2psub.rom"
 
 for f in $SYS_ROMS
