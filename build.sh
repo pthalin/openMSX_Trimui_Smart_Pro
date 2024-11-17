@@ -15,6 +15,7 @@ cp -r ./openmsx-16.0/derived/aarch64-trimui-opt-3rd/bindist/install/share/ ./bui
 cp crossmix/MSX/* build/MSX
 cp crossmix/MSX2/* build/MSX2
 cp crossmix/settings/settings.xml build/MSX2/openmsx/share/
+cp -r crossmix/resources/ build/MSX2/openmsx
 
 # Replace symlink with file
 rm build/MSX2/openmsx/share/machines/msx1.xml 

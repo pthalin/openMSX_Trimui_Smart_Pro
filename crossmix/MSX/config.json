@@ -25,20 +25,24 @@
       "launch": ""
     },
     {
-      "name": "openMsx (C-Bios MSX1)",
+      "name": "openMsx (MSX1 C-Bios)",
       "launch": "openmsx.sh"
     },
     {
-      "name": "openMsx (C-Bios MSX2+)",
+      "name": "openMsx (MSX2+ C-Bios )",
       "launch": "../MSX2/openmsx.sh"
     },
     {
-      "name": "openMsx (MSX2+)",
+      "name": "openMsx (MSX2+ MSX-Bios)",
       "launch": "../MSX2/openmsx_msx2plus.sh"
     },
     {
-      "name": "openMsx (Turbo R)",
+      "name": "openMsx (MSX turbo R MSX-Bios)",
       "launch": "../MSX2/openmsx_turbor.sh"
+    },
+    {
+      "name": "openMsx Suport & Updates",
+      "launch": "../MSX2/openmsx_support.sh"
     }
   ]
 }
