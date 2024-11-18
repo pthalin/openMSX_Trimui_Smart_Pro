@@ -17,7 +17,7 @@ case "$rom_name" in
   file_in_zip="$(/mnt/SDCARD/System/bin/7zz l -ba "$ROM_FILE")"
   case "$file_in_zip" in
     *".dsk"* )
-      /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "C-Bios does not supppor .dsk files. Please use MSX-Bios." -k " "
+      ../openmsx_dsk_error.sh
       exit
       ;;
     * )
@@ -26,7 +26,7 @@ case "$rom_name" in
   esac
   ;;
  *".dsk"* )
-  /mnt/SDCARD/System/usr/trimui/scripts/infoscreen.sh -m "C-Bios does not supppor .dsk files. Please use MSX-Bios." -k " "
+  ../openmsx_dsk_error.sh
   exit
   ;;
  *"pampas"* )
