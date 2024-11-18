@@ -10,12 +10,13 @@ mkdir build
 mkdir build/MSX
 mkdir build/MSX2
 mkdir build/MSX2/openmsx
+mkdir build/MSX2/openmsx/resources
 cp -r ./openmsx-16.0/derived/aarch64-trimui-opt-3rd/bindist/install/bin/ ./build/MSX2/openmsx/
 cp -r ./openmsx-16.0/derived/aarch64-trimui-opt-3rd/bindist/install/share/ ./build/MSX2/openmsx/
 cp crossmix/MSX/* build/MSX
 cp crossmix/MSX2/* build/MSX2
 cp crossmix/settings/settings.xml build/MSX2/openmsx/share/
-cp -r crossmix/resources/ build/MSX2/openmsx
+cp crossmix/resources/*.png build/MSX2/openmsx/resources
 
 # Replace symlink with file
 rm build/MSX2/openmsx/share/machines/msx1.xml 
