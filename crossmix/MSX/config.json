@@ -41,7 +41,7 @@
       "launch": "../MSX2/openmsx_turbor.sh"
     },
     {
-      "name": "openMsx Suport & Updates",
+      "name": "openMsx Guide & Support",
       "launch": "../MSX2/openmsx_support.sh"
     }
   ]
