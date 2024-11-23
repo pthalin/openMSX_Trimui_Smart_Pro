@@ -32,7 +32,7 @@ Y - Enable auto-fire (Turbo R only).
 X - Diable auto-fire (Turbo R only).  
 L1 - Quick load state.  
 R1 - Quick save state.  
-L2 - Toggle Show FPS.
+L2 - Toggle Show FPS.  
 R2 - Toggle Show Battery Level.
   
 <p float="left">
