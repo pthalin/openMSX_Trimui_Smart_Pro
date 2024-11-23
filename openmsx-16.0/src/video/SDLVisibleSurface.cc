@@ -26,6 +26,9 @@ SDLVisibleSurface::SDLVisibleSurface(
 {
 	int flags = 0;
 	createSurface(width, height, flags);
+	
+	//Force render to software
+	//SDL_SetHint(SDL_HINT_RENDER_DRIVER, "software");
 
 	renderer.reset(SDL_CreateRenderer(window.get(), -1, 0));
 	if (!renderer) {
@@ -34,6 +37,10 @@ SDLVisibleSurface::SDLVisibleSurface(
 	}
 	SDL_RenderSetLogicalSize(renderer.get(), width, height);
 	setSDLRenderer(renderer.get());
+
+	SDL_RendererInfo rendererInfo;
+        SDL_GetRendererInfo(renderer.get(), &rendererInfo);
+        printf("Render: %s\n", rendererInfo.name);
 
 	surface.reset(SDL_CreateRGBSurface(
 		0, width, height, 32,
