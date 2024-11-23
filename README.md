@@ -30,9 +30,10 @@ A - Primary fire.
 B - Secondary fire.  
 Y - Enable auto-fire (Turbo R only).  
 X - Diable auto-fire (Turbo R only).  
-R1 - Quick save state.  
 L1 - Quick load state.  
-R2/L2 - Toggle Show FPS.
+R1 - Quick save state.  
+L2 - Toggle Show FPS.
+R2 - Toggle Show Battery Level.
   
 <p float="left">
 <img width="300" src="images/osd_keyboard.png">
@@ -40,8 +41,8 @@ R2/L2 - Toggle Show FPS.
 </p>
 
 #### Important
-+ C-Bios only works for .rom files and it does not have Basic. Use Turbo R for .dsk files and games that need Basic.
-+ Running Turbo R requires system roms to be installed. These will be automatically downloaded the first time you run Turbo R if you are connected to wifi.
++ C-Bios only works for .rom files and it does not have Basic. Use MSX-Bios for .dsk files and games that need Basic.
++ Running MSX-Bios requires system roms to be installed. These will be automatically downloaded the first time you run it if you are connected to wifi.
 + Save States can be removed by deleting the .oms file in the folder "Emus/MSX2/.openMSX/savestates" folder.
 + For the game [Pampas & Selene](https://www.unepicfran.com/en/msx_pampas.html) use "openMsx (C-Bios MSX2+)" with the file "pampas_e.rom" to automatically apply the needed configuration. The rom file may also be renamed to "Pampas & Selene.rom".
 
