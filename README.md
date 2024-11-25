@@ -12,7 +12,6 @@ Accessories for Trimui Smart Pro
 [Silicon Case](https://s.click.aliexpress.com/e/_Dk2vuOp)  
 [Thumb Grip](https://s.click.aliexpress.com/e/_Dm0gxmz)
 
-
 ### How to install
 IMPORTANT: You must have [Crossmix OS](https://github.com/cizia64/CrossMix-OS) installed to use openMSX. Save yourself some headache by using a branded SDCARD of good quality and not the noname card that you may get when buying the device.
 
@@ -45,6 +44,11 @@ R2 - Toggle Show Battery Level.
 + Running MSX-Bios requires system roms to be installed. These will be automatically downloaded the first time you run it if you are connected to wifi.
 + Save States can be removed by deleting the .oms file in the folder "Emus/MSX2/.openMSX/savestates" folder.
 + For the game [Pampas & Selene](https://www.unepicfran.com/en/msx_pampas.html) use "openMsx (C-Bios MSX2+)" with the file "pampas_e.rom" to automatically apply the needed configuration. The rom file may also be renamed to "Pampas & Selene.rom".
+
+#### Physical keyboard
+A Bluetooth or USB keyboard can be used with openMSX. To use a USB keyboard you ned a [USB-C OTG Adapter](https://s.click.aliexpress.com/e/_DljXh1r) or a [USB-C Hub](https://s.click.aliexpress.com/e/_DlLiGnR). The keyboard must be connected before starting openMSX. Any of the two USB port on the Trimui Smart Pro can be used. A Bluetooth keyboard must be paired in the Trimui Settings before starting openMSX.
+
+<img width="300" src="images/keyboard.jpg">
 
 ### How to build
 You need Linux to build.  
